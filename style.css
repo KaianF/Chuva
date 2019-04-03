@@ -1,0 +1,392 @@
+/*
+Cores:
+    azul:    #009ade 
+    rosa:    #ec0080 
+    amarelo: #ffea00 
+    branco:  #ffffff
+    preto :  #000000
+    cinza :  #4c4c4c
+Fontes : lubalin graph
+         Whitney
+*/
+* {
+  padding: 0;
+  margin: 0;
+}
+
+@font-face {
+    font-family: lubalin graph;
+    src: url('CnFont.otf');
+}
+@font-face {
+    font-family: Whitney;
+    src:url("Whitney.ttf");
+}
+h1{
+    font-family: Whitney;
+    color: black;
+}
+h2{
+    font-family: lubalin graph;
+    color: black;
+}
+#horario{
+    font-family: lubalin graph;
+    display: flex;
+    text-align: center;
+    width: 46vh;
+    height: 46vh;
+}
+#horario td{
+    width: 9vh;
+    font-size: 2.5vh;
+    height: 9vh;
+    color: white;
+    cursor: pointer;
+}
+#horario td i {
+    color :black;
+    font-size: 6vh;
+    cursor: pointer;
+    transition: 500ms;
+}
+#horario td i:hover{
+    color :#4c4c4c;
+}
+
+.azul{
+    background-color:  #009ade;
+}
+.rosa{
+
+    background-color:  #ec0080
+}
+.amarelo{
+
+    background-color:  #ffea00
+}
+#tabela{
+    display: flex;
+    width: 90vh;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 3vh;
+}
+#wrapper{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+#horarioProg{
+    margin-left: 5.5vh;
+    background-color: #ffea00;
+    width: 30vh;
+    display:block;
+}
+#horaProg{
+    text-align: center;
+    color: white;
+    font-size: 6vh;
+    font-family: lubalin graph;
+}
+.prog{
+    background-color: white;
+    height: 8.5vh;
+    width: 28vh;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.80vh;
+    cursor: pointer;
+}
+.prog h2{
+    font-family: Whitney;
+    font-weight: bold;
+    font-size: 2.0vh;
+}
+#progContainer{
+    display: block;
+}
+.hora{
+    transform: rotate(-90deg);
+    color:#4c4c4c;
+    text-align: center;
+    font-size: 2.9vh;
+    font-family: lubalin graph;
+    font-weight: bold;
+}
+.item1{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 8.5vh;
+    width: 4vh;
+
+}
+.progImg{
+    width: 9.2vh;    
+}
+
+.tituloProg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 9.2vh;
+    height: 8.5vh;
+    margin: 2vh;
+}
+#dia{
+    background-color: #009ade;
+    font-size: 3vh;
+    color: white;
+    font-family: lubalin graph;
+    width: 90vh;
+    height: 5vh;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 2vh;
+    margin-top: 2vh;
+}
+#linhaHeader{
+
+    width:100%;
+    background-color:#ffea00;
+    height: 0.5vh;
+}
+#dia p{
+    margin-left: 1.4vh;
+}
+#headerBody{
+    background-color: #000000;
+    height: 13vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#barraPesq{
+    display: flex;
+    width: 100%;
+    height: 3vh;
+    background-color: #4c4c4c;
+    align-self: flex-end;
+    justify-content: space-between;
+}
+#barraPesq img{
+    display: flex;
+    width: 5vh;
+    height: 3.6vh;
+}
+#anuncio{
+    display: flex;
+    color: white;
+    align-self: flex-end;
+    font-family: lubalin graph;
+}
+#logo{
+    margin-left: 25vw;
+}
+.inputProcura{
+    align-self: center;
+    margin-right: 25vw;
+}
+.inputProcura input{
+    background-color: #000000;
+    color:white;
+    border:none;
+}
+.inputProcura input::-webkit-input-placeholder {
+    text-align: center;
+    color:#4c4c4c;
+    font-family: Whitney;
+ }
+ #headerProg{
+     display:flex;
+     margin-right: 3vh;
+     flex-direction: column;
+ }
+#headerHoraProg{
+    text-align: right;
+    font-size: 4.5vh;
+    margin-bottom:2vh;
+}
+#teste1{
+    text-align: right
+}
+#Personagens{
+    width: 90vh;
+    height: 12vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #ec0080;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+#footerPersonagens{
+    align-self: flex-end;
+    width: 100%;
+    height: 3vh;
+    background-color: #009ade;
+    display: flex;
+    z-index: 0;
+}
+#linhaFooterPersonagens{
+    height: 1vh;
+    width: 100%;
+    background-color: #ffea00;
+    align-self: flex-end;
+}
+#footerImgs{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    height: 9vh;
+    text-align: center;
+}
+#footerImgs img{
+    height: 15vh;   
+    transition: 0.2s;
+    cursor: pointer;
+}
+#footerImgs img:hover{
+    height: 16vh;   
+}
+#footer i:hover{
+    color :#4c4c4c;
+}
+#footer{
+    display: flex;
+    align-items: flex-end   ;
+    z-index: 1; 
+}
+#footer i{
+    cursor: pointer;
+    color: white;
+    font-size: 5.5vh;
+    transition: 0.6s;
+}
+#footerBody{
+    background-color: #4c4c4c;
+    position: absolute;
+    bottom: 0px;
+    height: 8.1vh;
+    width: 100%;
+    display: flex;
+}
+#footerLinks{
+    background-color: black;
+    height: 3vh;
+    width: 100%;
+    align-self: flex-end;
+}
+.headerModal{
+    width: 100%;
+    height: 3vh;
+    background-color: #009ade;
+    display: flex;
+    position: absolute;
+    right: 1px;
+}
+#jorel .header{
+    background-color: #009ade;
+}
+
+.titulo{
+    width: 100%;
+    background-color: #ffea00;
+    height: 30vh;
+    margin-bottom: 20vh;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+.cronograma{
+    width: 100%;
+    background-color: #009ade;
+    height: 20vh;
+    bottom: 0px;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+}
+.modalContainer{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.dia{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    width: 12vh;
+    height: 12vh;
+    margin-right: 1vh;
+    background-color: white;
+    font-family: Whitney;
+    font-size: 2vh;
+}
+.diaSem{
+    color: #ec0080;
+    
+}
+.diaNum{
+    color: #ec0080;
+}
+.diaHor{
+    color:#ffea00;
+}
+.modalFoto{
+    background-color: white;
+    width:22vh;
+    border-radius: 25vh;
+    height: 22vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    border-style: solid;
+    border-color: #ec0080;
+    border-width: 19px;
+    position: fixed;
+    left: 10vh;
+}
+.modalFoto img{
+    position: fixed;
+    margin-top:2vh;
+    width: 15vh;
+}
+.tituloContents{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.modalTitulo{
+    text-align: center;
+    display:flex;
+    align-items: center;
+    background-color: #ec0080;
+    height: 9.6vh;
+    padding-right: 154px;
+    padding-left: 1vh;
+    flex-direction: column;
+    color: white;
+    font-family:  Whitney;
+
+}
+.modalTitulo p{
+    font-family:  lubalin graph;
+    font-size: 3vh;
+    margin-left: 14.5vh;
+    margin-top: 1vh;
+}
