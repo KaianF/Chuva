@@ -16,11 +16,11 @@ Fontes : lubalin graph
 
 @font-face {
     font-family: lubalin graph;
-    src: url('CnFont.otf');
+    src: url('assets/CnFont.otf');
 }
 @font-face {
     font-family: Whitney;
-    src:url("Whitney.ttf");
+    src:url("assets/Whitney.ttf");
 }
 h1{
     font-family: Whitney;
@@ -377,6 +377,7 @@ h2{
     align-items: center;
     background-color: #ec0080;
     height: 9.6vh;
+    max-width: 80vh;
     padding-right: 154px;
     padding-left: 1vh;
     flex-direction: column;
